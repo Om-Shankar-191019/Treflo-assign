@@ -33,10 +33,12 @@ const ImgSlider = () => {
                   ></img>
                 )}
               </div>
-              <div className="absolute top-44 mx-auto inset-x-1/4  px-8 py-6 rounded-xl bg-black bg-opacity-40">
-                <p className="text-white text-2xl md:text-4xl font-inter font-bold tracking-normal leading-none">
+              <div className="absolute top-0 left-0 right-0 bottom-0 mx-auto inset-x-1/4  px-8 py-6  bg-black bg-opacity-60 flex flex-row justify-center items-center">
+                <div className="w-2/3 md:w-1/2">
+                <p className="text-white text-2xl md:text-4xl font-inter font-bold tracking-normal leading-none text-center">
                   {parseInt(item.id) === slideIndex && item.text}
                 </p>
+                </div>
               </div>
             </div>
           );
